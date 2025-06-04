@@ -89,7 +89,7 @@ const ACCOUNTS = (programId: PublicKey, mint: PublicKey) => {
       pool: accounts.getPool(0),
       position: accounts.getPosition(signer.publicKey, 0),
       tokenProgram: new PublicKey(
-        "By2oVnXVEaMztJoCCcjE9fUqyoVyGX5eVdHapgxP3veV",
+        "By2oVnXVEaMztJoCCcjE9fUqyoVyGX5eVdHapgxP3veV", // GHX
       ),
     })
     .signers([signer])
