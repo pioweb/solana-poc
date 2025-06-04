@@ -94,7 +94,9 @@ const ACCOUNTS = (programId: PublicKey, mint: PublicKey) => {
       mint: mint.publicKey,
       pool: accounts.getPool(0),
       position: accounts.getPosition(signer.publicKey, 0),
-      tokenProgram: TOKEN_PROGRAM_ID,
+      tokenProgram: new PublicKey(
+        "By2oVnXVEaMztJoCCcjE9fUqyoVyGX5eVdHapgxP3veV",
+      ),
     })
     .signers([signer])
     .rpc({ commitment: "confirmed" });
