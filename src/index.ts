@@ -63,12 +63,6 @@ const ACCOUNTS = (programId: PublicKey, mint: PublicKey) => {
 
   anchor.setProvider(provider);
 
-  const ghx = Keypair.fromSecretKey(
-    bs58.decode(
-      "31Yv1oH8QooMFnQEYWN3MR8gpbUeQ2dwVxT5F4QX1aN1hM4LVPoDXof8SA2mEtnYwoPMhwtjG4RmTHyrzjpALn17",
-    ),
-  );
-
   const signer = Keypair.fromSecretKey(
     bs58.decode(
       "GL1Y6RymSoiuWZeQawU3kD79Ju1UEu1kjoES1yA9vYT7NJFpJiVbN3uvnYTg5c2vGULptKNNXngD26dafqSrbws",
